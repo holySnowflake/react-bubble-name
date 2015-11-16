@@ -1,3 +1,4 @@
+function createChart () {
 var d3 = require("d3")
 
 var nodes = d3.range(7).map(function(i) { return { radius: Math.random() * 12 + 4} })
@@ -69,3 +70,6 @@ document.getElementById('button').addEventListener('click', function(){
     .attr("r", function(d) { return d.radius; })
   }
 })
+}
+
+module.exports = createChart
