@@ -11,9 +11,9 @@ var Chart = React.createClass({
   render: function() {
     return (
       <div>
-        <h1>Hello</h1>
-        <button id='button'>Click</button>
+        <h2>Drag and drop the bubbles. Click anywhere to create new bubbles.</h2>
         <svg></svg>
+        <button id='button'>Click to see the bubbles move</button>
       </div>
     );
   }

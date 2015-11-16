@@ -9,7 +9,7 @@ Bubbles.d3 = function () {
   var color = d3.scale.category10();
   var cy = 25;
 
-  var width = 1000,
+  var width = 1500,
       height = 500;
 
   var drag = d3.behavior.drag()
