@@ -1,17 +1,25 @@
-var React  = require('react');
+var React = require('react');
 var Bubbles = require('./Bubbles.js');
-var App = React.createClass({
 
-  render: function () {
+var Chart = React.createClass({
 
-    return(
+  componentDidMount: function() {
+    console.log('IM HEREEEE');
+    Bubbles.d3();
+  },
+
+  render: function() {
+    return (
       <div>
-        <h1>Hello World!</h1>
-        <button id="button">Move Me</button>
+        <h2>Drag and drop the bubbles. Click anywhere to create new bubbles.</h2>
         <svg></svg>
+        <button id='button'>Click to see the bubbles move</button>
       </div>
     );
   }
+
 });
 
-module.exports = App;
+//module.exports = Chart;
+
+React.render(<Chart />, document.body);
