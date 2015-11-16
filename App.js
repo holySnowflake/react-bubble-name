@@ -1,5 +1,5 @@
 var React  = require('react');
-
+//var Bubbles = require('./Bubbles.js');
 var App = React.createClass({
 
   render: function () {
@@ -7,6 +7,7 @@ var App = React.createClass({
     return(
       <div>
         <h1>Hello World!</h1>
+        <button id="button">Move Me</button>
       </div>
     );
   }
