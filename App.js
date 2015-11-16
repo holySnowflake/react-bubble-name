@@ -1,5 +1,5 @@
 var React  = require('react');
-// var Bubbles = require('./Bubbles.js');
+var Bubbles = require('./Bubbles.js');
 var App = React.createClass({
 
   render: function () {
